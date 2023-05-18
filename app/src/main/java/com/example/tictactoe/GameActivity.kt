@@ -127,6 +127,7 @@ class GameActivity : AppCompatActivity() {
             dialog.findViewById<TextView>(R.id.winnerName).text = "Player 1 win the game"
             dialog.findViewById<Button>(R.id.exitBTN).setOnClickListener {
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
             dialog.findViewById<Button>(R.id.playagainBTN).setOnClickListener {
                 finish()
@@ -141,6 +142,7 @@ class GameActivity : AppCompatActivity() {
             dialog.findViewById<TextView>(R.id.winnerName).text = "Player 2 win the game"
             dialog.findViewById<Button>(R.id.exitBTN).setOnClickListener {
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
             dialog.findViewById<Button>(R.id.playagainBTN).setOnClickListener {
                 finish()
